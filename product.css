@@ -1,0 +1,29 @@
+article img{
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+}
+
+body{
+    padding: 1rem;
+}
+img{
+    max-width: 150px;
+    max-height: 150px;
+    
+}
+main{
+    text-align: center;
+}
+
+.product-container{
+    flex:3;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap:.5rem;
+}
+
+.product-details{
+    flex:3;
+}
