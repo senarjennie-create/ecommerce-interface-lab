@@ -4,48 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="style/detail.css">
     <title>Product Detail</title>
 </head>
 
 <body>
 
-    <h1>Product 1</h1>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">MyShop</h2>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <table boarde="1">
-        <tr>
-            <th>Specification</th>
-            <th>Details</th>
-        </tr>
-        <tr>
-            <td>Color</td>
-            <td>Black</td>
-            <td>White</td>
-            <td>Green</td>
-            <td>Blue</td>
-            <td>Violet</td>
-            <td>Yellow</td>
-        </tr>
-        <tr>
-            <td>Size</td>
-            <td>Medium</td>
-            <td>Small</td>
-            <td>Large</td>
-        </tr>
-    </table>
+    <div class="container">
 
-    <form>
-        <label>Quantity:
-            <input type="number" min="1" value="1">
-        </label>
-        <button type="submit"> Add to Cart</button>
-    </form>
-    <section>
-        <h2> User Reviews</h2>
-        <blockquote>
-            Great product! Highly recommended.
-        </blockquote>
-    </section>
+        <h1>Product 1</h1>
+
+        <div class="product-card">
+
+            <img src="image" alt="Product Image" class="product-img">
+
+            <div class="table-wrapper">
+                <table>
+                    <tr>
+                        <th>Specification</th>
+                        <th colspan="6">Details</th>
+                    </tr>
+
+                    <tr>
+                        <td>Color</td>
+                        <td>Black</td>
+                        <td>White</td>
+                        <td>Green</td>
+                        <td>Blue</td>
+                        <td>Violet</td>
+                        <td>Yellow</td>
+                    </tr>
+
+                    <tr>
+                        <td>Size</td>
+                        <td>Medium</td>
+                        <td>Small</td>
+                        <td>Large</td>
+                    </tr>
+                </table>
+            </div>
+
+            <form class="cart-form">
+                <label>Quantity:</label>
+                <input type="number" min="1" value="1">
+                <button type="submit">Add to Cart</button>
+            </form>
+
+        </div>
+
+        <section class="reviews">
+            <h2>User Reviews</h2>
+
+            <div class="review-box">
+                <p>Great product! Highly recommended.</p>
+            </div>
+
+        </section>
+
+    </div>
 
 </body>
 

@@ -4,50 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="style/checkout.css">
     <title>Checkout</title>
 </head>
 
 <body>
-    <section>
-        <h1>Checkout</h1>
-        <fieldset>
-            <legend>Shipping Address
-            </legend>
-            <label> Name:
-                <input type="text" requared>
-            </label><br>
-            <label> Province:
-                <input type="text" requared>
-            </label><br>
-            <label> Municipality:
-                <input type="text" requared>
-            </label><br>
-            <label> Street:
-                <input type="text" requared>
-            </label><br>
-            <label> Zip Code:
-                <input type="text" requared>
-            </label><br>
-        </fieldset>
-        <form>
-            <h2>Payment Method</h2>
-            <label>
-                <input type="radio" name="payment"> Cridet Card
-            </label><br>
-            <label>
-                <input type="radio" name="payment"> PayPal
-            </label><br>
-        </form>
-    </section>
 
-    <aside>
-        <h2>Order Summary</h2>
-        <p>total: $250</p>
-        <button>Place Order</button>
+    <header>
+        <h2 class="logo">MyShop</h2>
 
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    </aside>
+    <main class="checkout-container">
+
+        <section class="checkout-form">
+
+            <h1>Checkout</h1>
+
+            <form>
+
+                <fieldset>
+                    <legend>Shipping Address</legend>
+
+                    <label>Name:
+                        <input type="text" required>
+                    </label>
+
+                    <label>Province:
+                        <input type="text" required>
+                    </label>
+
+                    <label>Municipality:
+                        <input type="text" required>
+                    </label>
+
+                    <label>Street:
+                        <input type="text" required>
+                    </label>
+
+                    <label>Zip Code:
+                        <input type="text" required>
+                    </label>
+
+                </fieldset>
+
+                <h2>Payment Method</h2>
+
+                <label>
+                    <input type="radio" name="payment" required>
+                    Credit Card
+                </label>
+
+                <label>
+                    <input type="radio" name="payment">
+                    PayPal
+                </label>
+
+            </form>
+
+        </section>
+
+        <aside class="order-summary">
+
+            <h2>Order Summary</h2>
+
+            <p>Items: 2</p>
+            <p>Total: <strong>$250</strong></p>
+
+            <button>Place Order</button>
+
+        </aside>
+
+    </main>
 
 </body>
 

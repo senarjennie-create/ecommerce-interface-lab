@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="style/account.css">
     <title>My Account</title>
 </head>
+
 <body>
 
-<header>
-    <h1>Welcome, User</h1>
-    <nav>
-        <a href="#">Order History</a> |
-        <a href="#">Profile Settings</a> |
-        <a href="#">Wishlist</a>
-    </nav>
-</header>
+    <header>
+        <h1>Welcome, User</h1>
+        <nav>
+            <a href="#">Order History</a>
+            <a href="#">Profile Settings</a>
+            <a href="#">Wishlist</a>
+        </nav>
+    </header>
 
-<section>
-    <h2>Previous Purchases</h2>
+    <section class="orders">
+        <h2>Previous Purchases</h2>
 
-    <details>
-        <summary>Order #001</summary>
-        <p>Product 1 - $250</p>
-    </details>
+        <details class="order-card">
+            <summary>Order #001</summary>
+            <p>Stylish Shirt - ₱250</p>
+            <p>Ordered on: 2026-03-01</p>
+        </details>
 
-    <details>
-        <summary>Order #002</summary>
-        <p>Product 2 - $150</p>
-    </details>
-</section>
+        <details class="order-card">
+            <summary>Order #002</summary>
+            <p>Trendy Pants - ₱150</p>
+            <p>Ordered on: 2026-02-28</p>
+        </details>
+
+        <details class="order-card">
+            <summary>Order #003</summary>
+            <p>Casual Jacket - ₱500</p>
+            <p>Ordered on: 2026-02-25</p>
+        </details>
+    </section>
+    <a href="landing.html" class="back-btn"> Back</a>
 
 </body>
+
 </html>
