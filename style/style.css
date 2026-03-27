@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --primary-color: #2c3e50;
     --accent-color: #e67e22;
@@ -107,4 +108,121 @@ nav ul li a:focus {
         opacity: 1;
         transform: translateY(0);
     }
+=======
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #e67e22;
+    --bg-light: #f4f4f4;
+    --text-main: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa, #e4ecf7, red);
+    color: #333;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #d6731c;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #eb3d3d;
+    color: white;
+    border-radius: 5px;
+}
+
+nav ul li a:focus {
+    outline: 3px solid #d6731c;
+    outline-offset: 2px;
+}
+
+
+@media (min-width: 481px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 769px) {
+    nav {
+        justify-content: space-between;
+        padding: 15px 50px;
+    }
+
+    nav ul {
+        gap: 30px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+
+    .hero {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+>>>>>>> 6d4e3a9b5cb895acb3b4c46909396a997e33afe1
 }
