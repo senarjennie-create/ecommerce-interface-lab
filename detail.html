@@ -6,71 +6,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/detail.css">
     <link rel="stylesheet" href="style/style.css">
-    <title>Product Detail</title>
+    <title>Products</title>
 </head>
 
 <body>
-<nav>
-        <div class="logo">Clothing Shop</div>
-        <ul>
-            <li><a href="landing.html">Home</a></li>
-            <li><a href="products.html">Shop</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+
+    <header>
+        <nav>
+            <div class="logo">Clothing Shop</div>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li> <!-- fixed lowercase -->
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="container">
 
-        <h1>Product 1</h1>
+        <div class="product-wrapper">
 
-        <div class="product-card">
-
-            <img src="masid.jpg" alt="Product Masid T-Shirt" class="product-img">
-
-            <div class="table-wrapper">
-                <table>
-                    <tr>
-                        <th>Specification</th>
-                        <th colspan="6">Details</th>
-                    </tr>
-
-                    <tr>
-                        <td>Color</td>
-                        <td>Black</td>
-                        <td>White</td>
-                        <td>Green</td>
-                        <td>Blue</td>
-                        <td>Violet</td>
-                        <td>Yellow</td>
-                    </tr>
-
-                    <tr>
-                        <td>Size</td>
-                        <td>Medium</td>
-                        <td>Small</td>
-                        <td>Large</td>
-                    </tr>
-                </table>
+            <div>
+                <img src="image/masid.jpg" alt="Product Image">
             </div>
 
-            <form class="cart-form">
-                <label>Quantity:</label>
-                <input type="number" min="1" value="1">
-                <a href="cart.html" class="hero-btn">Add to Cart</a>
-            </form>
+            <div class="product-info">
+                <h1>Masid T-Shirt</h1>
+                <div class="price">₱250</div>
+
+                <p class="description">
+                    A stylish and comfortable shirt perfect for everyday wear or presentations.
+                </p>
+
+                <div class="options">
+                    <label>Color</label>
+                    <select>
+                        <option>Black</option>
+                        <option>White</option>
+                        <option>Blue</option>
+                    </select>
+
+                    <label>Size</label>
+                    <select>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                    </select>
+
+                    <label>Quantity</label>
+                    <input type="number" value="1" min="1">
+                </div>
+
+                <a href="cart.html" class="btn">Add to Cart</a>
+            </div>
 
         </div>
 
-        <section class="reviews">
-            <h2>User Reviews</h2>
+        <div class="specs">
+            <h2>Product Specifications</h2>
+            <table>
+                <tr>
+                    <th>Specification</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Material</td>
+                    <td>Cotton Blend</td>
+                </tr>
+                <tr>
+                    <td>Fit</td>
+                    <td>Regular Fit</td>
+                </tr>
+            </table>
+        </div>
 
-            <div class="review-box">
-                <p>Great product! Highly recommended.</p>
-            </div>
+        <section class="review" id="reviews-section">
+            <article id="reviews-container">
+                <h2>Customer Reviews</h2>
+                <div class="review-item" id="review-1">
+                    <p><strong id="reviewer-1">Nicole D.</strong>: <span id="review-text-1">"This T-shirt is super
+                            comfortable and perfect for everyday wear. I love the fit and the material!"</span></p>
+                </div>
+                <div class="review-item" id="review-2">
+                    <p><strong id="reviewer-2">Nicole D.</strong>: <span id="review-text-2">"The quality of this T-shirt
+                            is amazing! It holds up well after multiple washes and still feels soft."</span></p>
+                </div>
+            </article>
 
+            <form class="review-form" id="review-form">
+                <h3>Write a Review</h3>
+                <div class="form-group" id="rating-group">
+                    <label for="rating">Rating:</label>
+                    <input type="range" id="rating" name="rating" min="0" max="5" step="1">
+                    <span id="rating-value">0</span>/5
+                </div>
+                <div class="form-group" id="review-text-group">
+                    <label for="review-text">Your Review:</label>
+                    <textarea id="review-text" name="review" rows="4"
+                        placeholder="Write your review here..."></textarea>
+                </div>
+                <button type="submit" id="submit-review-btn">Submit Review</button>
+            </form>
         </section>
 
-    </div>
+        <script src="script.js"></script>
+
+        <footer>
+        <p>&copy; 2026 Senar® Products. All rights reserved.</p>
+    </footer>
+
 
 </body>
 

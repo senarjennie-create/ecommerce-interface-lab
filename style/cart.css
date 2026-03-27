@@ -54,7 +54,6 @@ h1 {
     font-weight: bold;
 }
 
-
 input[type="number"] {
     width: 60px;
     padding: 5px;
@@ -63,21 +62,19 @@ input[type="number"] {
     text-align: center;
 }
 
-
 .subtotal {
     max-width: 800px;
     margin: 20px auto;
     padding: 15px;
     background: #eaf4ff;
-    border: 2px solid #3498db;
+    border: 2px solid #e67e22;
     border-radius: 10px;
     text-align: center;
 }
 
 .subtotal h2 {
-    color: #3498db;
+    color: #e67e22;
 }
-
 
 .checkout-btn {
     display: flex;
@@ -89,7 +86,7 @@ button {
     padding: 12px 25px;
     border: none;
     border-radius: 8px;
-    background: #3498db;
+    background: #e67e22;
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -97,10 +94,9 @@ button {
 }
 
 button:hover {
-    background: #2980b9;
+    background: #e67e22;
     animation: pulse 0.5s;
 }
-
 
 .empty-cart {
     max-width: 800px;
@@ -148,7 +144,6 @@ button:hover {
 
 }
 
-
 @media (min-width:769px) {
 
     header {
@@ -169,29 +164,31 @@ button:hover {
     }
 
 }
-.order-summary{
-    max-width:800px;
-    margin:20px auto;
-    padding:20px;
-    background:white;
-    border:1px solid #ddd;
-    border-radius:10px;
+
+.order-summary {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
 }
 
-.order-summary h2{
-    margin-bottom:15px;
-    color:#333;
+.order-summary h2 {
+    margin-bottom: 15px;
+    color: #333;
 }
 
-.summary-row{
-    display:flex;
-    justify-content:space-between;
-    padding:8px 0;
-    border-bottom:1px solid #eee;
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
 }
 
-.summary-row.total{
-    display:flex;
-    justify-content:space-between;
-    padding:8px 0;
-    border-bottom:1px solid #eee;}
+.summary-row.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}

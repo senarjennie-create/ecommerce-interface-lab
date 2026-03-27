@@ -1,105 +1,98 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-html {
-    font-size: 16px;
-}
-
 body {
-    background-color: #f4f6f8;
-    padding: 1.875rem;
+    background-color: #f5f5f5;
     color: #333;
 }
 
-
-header {
-    max-width: 50rem;
-    margin: auto;
-    background-color: #ffffff;
-    padding: 1.25rem;
-    border-radius: 0.625rem;
+.account-welcome {
     text-align: center;
-    border: 0.0625rem solid #ddd;
-    margin-bottom: 1.5625rem;
+    padding: 30px 20px;
 }
 
-header h1 {
-    margin-bottom: 0.625rem;
+.account-welcome h1 {
+    font-size: 2rem;
     color: #2c3e50;
-    font-size: 1.8rem;
 }
 
+.account-nav {
+    background-color: #ffffff;
+    max-width: 50rem;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
-nav a {
+.account-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.account-nav ul li a {
     text-decoration: none;
-    color: #3498db;
+    color: #2c3e50;
     font-weight: bold;
-    margin: 0 0.3125rem;
-    font-size: 1rem;
+    padding: 5px 10px;
 }
 
-nav a:hover {
+.account-nav ul li a:hover {
     text-decoration: underline;
 }
 
-
-.back-btn {
-    display: inline-block;
-    background-color: #3498db;
-    color: white;
-    text-decoration: none;
-    padding: 0.625rem 1.25rem;
-    border-radius: 0.5rem;
-    font-weight: bold;
-    font-size: 1rem;
-    margin-bottom: 1em;
-    transition: background-color 0.3s;
-}
-
-.back-btn:hover {
-    background-color: #2980b9;
-}
-
-
-section {
+.orders {
     max-width: 50rem;
-    margin: auto;
+    margin: 20px auto;
     background-color: #ffffff;
-    padding: 1.25rem;
-    border-radius: 0.625rem;
-    border: 0.0625rem solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
-    margin-bottom: 0.9375rem;
-    color: #333;
+.orders h2 {
     text-align: center;
-    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
 }
 
-
-details {
-    margin-bottom: 0.9375rem;
-    padding: 0.625rem 0.9375rem;
-    border-radius: 0.5rem;
-    background-color: #f9f9f9;
-    border: 0.0625rem solid #ccc;
+details.order-card {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
 }
 
-summary {
+details summary {
     font-weight: bold;
     cursor: pointer;
     color: #2c3e50;
-    font-size: 1.1rem;
 }
 
 details p {
-    margin-top: 0.625rem;
-    font-weight: bold;
-    color: #27ae60;
-    font-size: 1rem;
+    margin-top: 5px;
+    font-weight: normal;
+    color: #555;
 }
+
+.back-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    background-color: #e67e22;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    opacity: 0.8;
+}
+

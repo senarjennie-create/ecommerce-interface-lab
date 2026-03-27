@@ -3,6 +3,7 @@
     --accent-color: #e67e22;
     --bg-light: #f4f4f4;
     --text-main: black;
+    --text-secondary: maroon;
 }
 
 * {
@@ -16,7 +17,6 @@ body {
     background: linear-gradient(135deg, #f5f7fa, #e4ecf7, red);
     color: #333;
 }
-
 
 nav {
     display: flex;
@@ -76,7 +76,7 @@ nav ul li a:focus {
     }
 
     .product-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -95,13 +95,7 @@ nav ul li a:focus {
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
     }
-
-    .hero {
-        flex-direction: row;
-        text-align: left;
-    }
 }
-
 
 @keyframes fadeIn {
     from {
